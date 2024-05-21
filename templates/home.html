@@ -1,0 +1,25 @@
+{% extends "index.html" %}      
+{% block content %}	
+<html>
+{%load static%}
+        
+    <body>
+        <img src="{%static 'image/muruga1.jpeg'%}">
+        <img src="{%static 'image/muruga2.jpeg'%}">
+        <img src="{%static 'image/muruga3.jpeg'%}">
+    </body>
+</html>
+
+{% if user.is_authenticated %}
+    <h1>Welcome : {{user.username}}</h1>	
+{% else %}
+    <h1>WELCOME TO BALAMURUGAN THIRUKOVIL MATTUKKARANUR</h1>
+    
+        
+{% endif %}
+{% endblock %}
+
+    
+    
+
+
